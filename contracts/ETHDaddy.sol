@@ -28,7 +28,7 @@ contract ETHDaddy is ERC721 {
     }
 
     function list(string memory _name, uint256 _cost) public onlyOwner {
-        maxSupply++;
+        ++maxSupply;
         domains[maxSupply] = Domain(_name, _cost, false);
     }
 
